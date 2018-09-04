@@ -27,6 +27,10 @@ namespace AlbionData.Models
               .HasName("Main");
         entity.HasIndex(e => new { e.ItemTypeId, e.UpdatedAt, e.DeletedAt })
               .HasName("TypeId");
+        entity.HasIndex(e => e.DeletedAt)
+              .HasName("Deleted");
+        entity.HasIndex(e => new { e.DeletedAt, e.Expires, e.UpdatedAt })
+              .HasName("Expired");
 
         entity.Property(e => e.AlbionId)
               .IsRequired();
