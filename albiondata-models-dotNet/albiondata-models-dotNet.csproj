@@ -3,6 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>albiondata_models_dotNet</RootNamespace>
+    <Version>0.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>albion-online-data</Company>
+    <Description>Provides network and database models for the albion online data project.</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.2" />
+  </ItemGroup>
 
 </Project>
