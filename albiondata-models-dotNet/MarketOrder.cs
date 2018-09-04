@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace albiondata_models_dotNet
+namespace AlbionData.Models
 {
   public class MarketOrder
   {

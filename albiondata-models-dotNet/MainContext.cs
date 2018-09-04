@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace albiondata_models_dotNet
+namespace AlbionData.Models
 {
-  internal class MainContext : DbContext
+  public class MainContext : DbContext
   {
     public DbSet<GoldPrice> GoldPrices { get; set; }
     public DbSet<MarketOrderDB> MarketOrders { get; set; }

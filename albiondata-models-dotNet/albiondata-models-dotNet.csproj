@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>albiondata_models_dotNet</RootNamespace>
-    <Version>0.0.1</Version>
+    <Version>0.0.3</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>albion-online-data</Company>
     <Description>Provides network and database models for the albion online data project.</Description>

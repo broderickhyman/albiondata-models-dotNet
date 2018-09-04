@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace albiondata_models_dotNet
+namespace AlbionData.Models
 {
   public class MarketStat
   {
