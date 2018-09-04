@@ -26,6 +26,11 @@ namespace AlbionData.Models
     }
   }
 
+  public class MarketUpload
+  {
+    public List<MarketOrder> Orders = new List<MarketOrder>();
+  }
+
   public class MarketOrderDB : MarketOrder
   {
     [Column("albion_id")]

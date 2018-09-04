@@ -7,6 +7,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>albion-online-data</Company>
     <Description>Provides network and database models for the albion online data project.</Description>
+    <PackageId>AlbionData.Models</PackageId>
+    <Authors>albion-online-data</Authors>
+    <Product>albion-online-data</Product>
+    <RepositoryUrl>https://github.com/broderickhyman/albiondata-models-dotnet</RepositoryUrl>
+    <PackageProjectUrl>https://www.albion-online-data.com/</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
