@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace AlbionData.Models
@@ -30,5 +31,29 @@ namespace AlbionData.Models
 
     [Column("timestamp")]
     public DateTime TimeStamp { get; set; }
+  }
+
+  public class MarketStatResponse
+  {
+    [DataMember(Name = "timestamps")]
+    public List<ulong> TimeStamps { get; set; }
+
+    [DataMember(Name = "prices_min")]
+    public List<ulong> PricesMin { get; set; }
+
+    [DataMember(Name = "prices_max")]
+    public List<ulong> PricesMax { get; set; }
+
+    [DataMember(Name = "prices_avg")]
+    public List<double> PricesAvg { get; set; }
+  }
+
+  public class MarketStatChartResponse
+  {
+    [DataMember(Name = "location")]
+    public string Location { get; set; }
+
+    [DataMember(Name = "data")]
+    public MarketStatResponse Data { get; set; }
   }
 }

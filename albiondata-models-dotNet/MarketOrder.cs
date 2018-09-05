@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace AlbionData.Models
@@ -29,6 +30,39 @@ namespace AlbionData.Models
   public class MarketUpload
   {
     public List<MarketOrder> Orders = new List<MarketOrder>();
+  }
+
+  public class MarketResponse
+  {
+    [DataMember(Name = "item_id")]
+    public string ItemTypeId { get; set; }
+
+    [DataMember(Name = "city")]
+    public string City { get; set; }
+
+    [DataMember(Name = "sell_price_min")]
+    public ulong SellPriceMin { get; set; }
+
+    [DataMember(Name = "sell_price_min_date")]
+    public DateTime SellPriceMinDate { get; set; }
+
+    [DataMember(Name = "sell_price_max")]
+    public ulong SellPriceMax { get; set; }
+
+    [DataMember(Name = "sell_price_max_date")]
+    public DateTime SellPriceMaxDate { get; set; }
+
+    [DataMember(Name = "buy_price_min")]
+    public ulong BuyPriceMin { get; set; }
+
+    [DataMember(Name = "buy_price_min_date")]
+    public DateTime BuyPriceMinDate { get; set; }
+
+    [DataMember(Name = "buy_price_max")]
+    public ulong BuyPriceMax { get; set; }
+
+    [DataMember(Name = "buy_price_max_date")]
+    public DateTime BuyPriceMaxDate { get; set; }
   }
 
   public class MarketOrderDB : MarketOrder
