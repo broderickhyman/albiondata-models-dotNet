@@ -14,10 +14,10 @@ namespace AlbionData.Models
     public DateTime? DeletedAt { get; set; }
 
     [Column("id")]
-    public long Id { get; set; }
+    public ulong Id { get; set; }
 
     [Column("price")]
-    public int Price { get; set; }
+    public uint Price { get; set; }
 
     [Column("timestamp")]
     public DateTime TimeStamp { get; set; }
@@ -28,7 +28,7 @@ namespace AlbionData.Models
 
   public class GoldPriceUpload
   {
-    public int[] Prices;
+    public uint[] Prices;
     public long[] TimeStamps;
   }
 }

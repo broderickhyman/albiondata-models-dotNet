@@ -7,13 +7,13 @@ namespace AlbionData.Models
 {
   public class MarketOrder
   {
-    public long Id { get; set; }
+    public ulong Id { get; set; }
     public string ItemTypeId { get; set; }
-    public int LocationId { get; set; }
-    public int QualityLevel { get; set; }
-    public int EnchantmentLevel { get; set; }
-    public long UnitPriceSilver { get; set; }
-    public long Amount { get; set; }
+    public ushort LocationId { get; set; }
+    public byte QualityLevel { get; set; }
+    public byte EnchantmentLevel { get; set; }
+    public ulong UnitPriceSilver { get; set; }
+    public uint Amount { get; set; }
     public string AuctionType { get; set; }
     public DateTime Expires { get; set; }
 
@@ -34,10 +34,10 @@ namespace AlbionData.Models
   public class MarketOrderDB : MarketOrder
   {
     [Column("albion_id")]
-    public long AlbionId { get; set; }
+    public ulong AlbionId { get; set; }
 
     [Column("initial_amount")]
-    public long InitialAmount { get; set; }
+    public uint InitialAmount { get; set; }
 
     [Column("created_at")]
     public DateTime CreatedAt { get; set; }

@@ -9,7 +9,7 @@ namespace AlbionData.Models
   public class MarketStat
   {
     [Column("id")]
-    public long Id { get; set; }
+    public ulong Id { get; set; }
 
     [Column("item_id")]
     [MaxLength(128)]
@@ -20,13 +20,13 @@ namespace AlbionData.Models
     public string Location { get; set; }
 
     [Column("price_avg")]
-    public float PriceAverage { get; set; }
+    public double PriceAverage { get; set; }
 
     [Column("price_max")]
-    public int PriceMax { get; set; }
+    public ulong PriceMax { get; set; }
 
     [Column("price_min")]
-    public int PriceMin { get; set; }
+    public ulong PriceMin { get; set; }
 
     [Column("timestamp")]
     public DateTime TimeStamp { get; set; }
