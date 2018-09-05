@@ -64,7 +64,7 @@ namespace AlbionData.Models
       {
         entity.ToTable("market_stats");
         entity.HasKey(e => e.Id);
-        entity.HasAlternateKey(e => new { e.ItemId, e.Location, e.TimeStamp });
+        entity.HasAlternateKey(e => new { e.ItemId, e.LocationId, e.TimeStamp });
       });
 
       modelBuilder.Entity<GoldPrice>(entity =>

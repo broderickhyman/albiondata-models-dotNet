@@ -17,7 +17,7 @@ namespace AlbionData.Models
 
     [Column("location")]
     [MaxLength(128)]
-    public string Location { get; set; }
+    public ushort LocationId { get; set; }
 
     [Column("price_avg")]
     public double PriceAverage { get; set; }
