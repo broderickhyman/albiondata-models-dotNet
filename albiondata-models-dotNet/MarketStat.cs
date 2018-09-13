@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -35,25 +36,25 @@ namespace AlbionData.Models
 
   public class MarketStatResponse
   {
-    [DataMember(Name = "timestamps")]
+    [JsonProperty(PropertyName = "timestamps")]
     public List<ulong> TimeStamps { get; set; }
 
-    [DataMember(Name = "prices_min")]
+    [JsonProperty(PropertyName = "prices_min")]
     public List<ulong> PricesMin { get; set; }
 
-    [DataMember(Name = "prices_max")]
+    [JsonProperty(PropertyName = "prices_max")]
     public List<ulong> PricesMax { get; set; }
 
-    [DataMember(Name = "prices_avg")]
+    [JsonProperty(PropertyName = "prices_avg")]
     public List<double> PricesAvg { get; set; }
   }
 
   public class MarketStatChartResponse
   {
-    [DataMember(Name = "location")]
+    [JsonProperty(PropertyName = "location")]
     public string Location { get; set; }
 
-    [DataMember(Name = "data")]
+    [JsonProperty(PropertyName = "data")]
     public MarketStatResponse Data { get; set; }
   }
 }

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>albiondata_models_dotNet</RootNamespace>
-    <Version>0.0.8</Version>
+    <Version>0.0.9</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company>albion-online-data</Company>
     <Description>Provides network and database models for the albion online data project.</Description>
@@ -13,12 +13,13 @@
     <RepositoryUrl>https://github.com/broderickhyman/albiondata-models-dotnet</RepositoryUrl>
     <PackageProjectUrl>https://www.albion-online-data.com/</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Adding api responses</PackageReleaseNotes>
+    <PackageReleaseNotes>Adding Json.NET serialization properties and new Location enum</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
 </Project>

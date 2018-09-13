@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
@@ -34,34 +35,34 @@ namespace AlbionData.Models
 
   public class MarketResponse
   {
-    [DataMember(Name = "item_id")]
+    [JsonProperty(PropertyName = "item_id")]
     public string ItemTypeId { get; set; }
 
-    [DataMember(Name = "city")]
+    [JsonProperty(PropertyName = "city")]
     public string City { get; set; }
 
-    [DataMember(Name = "sell_price_min")]
+    [JsonProperty(PropertyName = "sell_price_min")]
     public ulong SellPriceMin { get; set; }
 
-    [DataMember(Name = "sell_price_min_date")]
+    [JsonProperty(PropertyName = "sell_price_min_date")]
     public DateTime SellPriceMinDate { get; set; }
 
-    [DataMember(Name = "sell_price_max")]
+    [JsonProperty(PropertyName = "sell_price_max")]
     public ulong SellPriceMax { get; set; }
 
-    [DataMember(Name = "sell_price_max_date")]
+    [JsonProperty(PropertyName = "sell_price_max_date")]
     public DateTime SellPriceMaxDate { get; set; }
 
-    [DataMember(Name = "buy_price_min")]
+    [JsonProperty(PropertyName = "buy_price_min")]
     public ulong BuyPriceMin { get; set; }
 
-    [DataMember(Name = "buy_price_min_date")]
+    [JsonProperty(PropertyName = "buy_price_min_date")]
     public DateTime BuyPriceMinDate { get; set; }
 
-    [DataMember(Name = "buy_price_max")]
+    [JsonProperty(PropertyName = "buy_price_max")]
     public ulong BuyPriceMax { get; set; }
 
-    [DataMember(Name = "buy_price_max_date")]
+    [JsonProperty(PropertyName = "buy_price_max_date")]
     public DateTime BuyPriceMaxDate { get; set; }
   }
 
