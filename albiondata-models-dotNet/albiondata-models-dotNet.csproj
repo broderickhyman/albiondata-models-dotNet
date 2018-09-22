@@ -1,25 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>albiondata_models_dotNet</RootNamespace>
-    <Version>0.0.9</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Company>albion-online-data</Company>
-    <Description>Provides network and database models for the albion online data project.</Description>
     <PackageId>AlbionData.Models</PackageId>
+    <Version>0.0.10</Version>
     <Authors>albion-online-data</Authors>
+    <Company>albion-online-data</Company>
     <Product>albion-online-data</Product>
-    <RepositoryUrl>https://github.com/broderickhyman/albiondata-models-dotnet</RepositoryUrl>
+    <Description>Provides network and database models for the albion online data project.</Description>
     <PackageProjectUrl>https://www.albion-online-data.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/broderickhyman/albiondata-models-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Adding Json.NET serialization properties and new Location enum</PackageReleaseNotes>
+    <PackageReleaseNotes>Converting library to .Net Standard</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.3" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
   </ItemGroup>
 
 </Project>

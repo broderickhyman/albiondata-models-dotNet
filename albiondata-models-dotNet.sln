@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "albiondata-models-dotNet", "albiondata-models-dotNet\albiondata-models-dotNet.csproj", "{2D1CCF8A-0CA4-472D-AECD-8AFD2BA5CCF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "albiondata-models-dotNet", "albiondata-models-dotNet\albiondata-models-dotNet.csproj", "{9612C3AF-871A-410B-9A04-967D09D4436A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2D1CCF8A-0CA4-472D-AECD-8AFD2BA5CCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D1CCF8A-0CA4-472D-AECD-8AFD2BA5CCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D1CCF8A-0CA4-472D-AECD-8AFD2BA5CCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D1CCF8A-0CA4-472D-AECD-8AFD2BA5CCF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9612C3AF-871A-410B-9A04-967D09D4436A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9612C3AF-871A-410B-9A04-967D09D4436A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9612C3AF-871A-410B-9A04-967D09D4436A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9612C3AF-871A-410B-9A04-967D09D4436A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7BA24CCC-BCD1-4707-BBE6-E1DA45E3A23B}
+		SolutionGuid = {EFD926F2-6E7C-4956-9D13-0C6D027DC1E5}
 	EndGlobalSection
 EndGlobal
