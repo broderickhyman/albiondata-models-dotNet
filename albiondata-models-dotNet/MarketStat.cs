@@ -22,7 +22,7 @@ namespace AlbionData.Models
     public ushort LocationId { get; set; }
 
     [Column("price_avg")]
-    public double PriceAverage { get; set; }
+    public decimal PriceAverage { get; set; }
 
     [Column("price_max")]
     public ulong PriceMax { get; set; }
@@ -46,7 +46,7 @@ namespace AlbionData.Models
     public List<ulong> PricesMax { get; set; }
 
     [JsonProperty(PropertyName = "prices_avg")]
-    public List<double> PricesAvg { get; set; }
+    public List<decimal> PricesAvg { get; set; }
   }
 
   public class MarketStatChartResponse
