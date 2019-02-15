@@ -41,6 +41,9 @@ namespace AlbionData.Models
     [JsonProperty(PropertyName = "city")]
     public string City { get; set; }
 
+    [JsonProperty(PropertyName = "quality")]
+    public byte QualityLevel { get; set; }
+
     [JsonProperty(PropertyName = "sell_price_min")]
     public ulong SellPriceMin { get; set; }
 
