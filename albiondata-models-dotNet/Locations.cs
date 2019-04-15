@@ -27,28 +27,28 @@ namespace AlbionData.Models
       {
         return name;
       }
-      return "Unknown";
+      return null;
     }
 
     public static string GetName(int locationId)
     {
-      return GetName((Location)locationId);
+      return GetName((Location)locationId) ?? locationId.ToString();
     }
   }
 
   public enum Location
   {
-    Thetford = 0,
     SwampCross = 4,
-    Lymhurst = 1000,
+    Thetford = 7,
+    Lymhurst = 1002,
     ForestCross = 1006,
-    Bridgewatch = 2000,
     SteppeCross = 2002,
+    Bridgewatch = 2004,
     HighlandCross = 3002,
     BlackMarket = 3003,
-    Martlock = 3004,
     Caerleon = 3005,
-    FortSterling = 4000,
+    Martlock = 3008,
+    FortSterling = 4002,
     MountainCross = 4006
   }
 }

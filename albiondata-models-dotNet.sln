@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "albiondata-models-dotNet", "albiondata-models-dotNet\albiondata-models-dotNet.csproj", "{9612C3AF-871A-410B-9A04-967D09D4436A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "albiondata-models-dotNet", "albiondata-models-dotNet\albiondata-models-dotNet.csproj", "{9612C3AF-871A-410B-9A04-967D09D4436A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "albiondata-models-tests", "albiondata-models-tests\albiondata-models-tests.csproj", "{9C97B46D-0F56-447B-A380-D6EFCD5C8AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9612C3AF-871A-410B-9A04-967D09D4436A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9612C3AF-871A-410B-9A04-967D09D4436A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9612C3AF-871A-410B-9A04-967D09D4436A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C97B46D-0F56-447B-A380-D6EFCD5C8AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C97B46D-0F56-447B-A380-D6EFCD5C8AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C97B46D-0F56-447B-A380-D6EFCD5C8AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C97B46D-0F56-447B-A380-D6EFCD5C8AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
