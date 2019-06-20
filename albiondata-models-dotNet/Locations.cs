@@ -17,6 +17,7 @@ namespace AlbionData.Models
       {Location.BlackMarket, "Black Market" },
       {Location.Martlock, "Martlock" },
       {Location.Caerleon, "Caerleon" },
+      {Location.Caerleon2, "Caerleon 2" },
       {Location.FortSterling, "Fort Sterling" },
       {Location.MountainCross, "Mountain Cross" }
     };
@@ -47,6 +48,7 @@ namespace AlbionData.Models
     HighlandCross = 3002,
     BlackMarket = 3003,
     Caerleon = 3005,
+    Caerleon2 = 3013,
     Martlock = 3008,
     FortSterling = 4002,
     MountainCross = 4006

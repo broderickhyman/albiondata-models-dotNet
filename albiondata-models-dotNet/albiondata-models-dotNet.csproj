@@ -5,7 +5,7 @@
     <RootNamespace>albiondata_models_dotNet</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>AlbionData.Models</PackageId>
-    <Version>0.0.15</Version>
+    <Version>0.0.16</Version>
     <Authors>albion-online-data</Authors>
     <Company>albion-online-data</Company>
     <Product>albion-online-data</Product>
@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://www.albion-online-data.com/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/broderickhyman/albiondata-models-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Updating Location Enums</PackageReleaseNotes>
+    <PackageReleaseNotes>Adding second caerleon market location</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
