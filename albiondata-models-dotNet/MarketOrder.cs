@@ -22,9 +22,9 @@ namespace AlbionData.Models
     [NotMapped]
     public string ItemGroupTypeId { get; set; }
 
-    public override string ToString()
+    public string GetUniqueKey()
     {
-      return $"{Id}{Amount}";
+      return $"{Id}|{Amount}|{UnitPriceSilver}";
     }
   }
 

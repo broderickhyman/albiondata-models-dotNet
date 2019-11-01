@@ -2,7 +2,7 @@ using AlbionData.Models;
 using System;
 using Xunit;
 
-namespace albiondata_models_tests
+namespace AlbionData.Models.Tests
 {
   public class LocationsTests
   {
