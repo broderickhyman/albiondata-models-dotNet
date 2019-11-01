@@ -6,9 +6,9 @@ namespace AlbionData.Models
 {
   public class MarketHistory
   {
-    public uint ItemAmount;
-    public uint SilverAmount;
-    public uint Timestamp;
+    public ulong ItemAmount;
+    public ulong SilverAmount;
+    public ulong Timestamp;
   }
 
   public class MarketHistoriesUpload
