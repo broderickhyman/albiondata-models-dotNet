@@ -41,8 +41,10 @@ namespace AlbionData.Models
   {
     SwampCross = 4,
     Thetford = 7,
+    MorganasRest = 8,
     Lymhurst = 1002,
     ForestCross = 1006,
+    MerlynsRest = 1012,
     SteppeCross = 2002,
     Bridgewatch = 2004,
     HighlandCross = 3002,
@@ -51,6 +53,7 @@ namespace AlbionData.Models
     Caerleon2 = 3013,
     Martlock = 3008,
     FortSterling = 4002,
-    MountainCross = 4006
+    MountainCross = 4006,
+    ArthursRest = 4300
   }
 }
