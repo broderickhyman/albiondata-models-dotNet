@@ -7,19 +7,22 @@ namespace AlbionData.Models
   {
     private static readonly Dictionary<Location, string> names = new Dictionary<Location, string>
     {
-      {Location.Thetford, "Thetford" },
       {Location.SwampCross, "Swamp Cross" },
+      {Location.Thetford, "Thetford" },
+      {Location.MorganasRest, "Morganas Rest" },
       {Location.Lymhurst, "Lymhurst" },
       {Location.ForestCross, "Forest Cross" },
-      {Location.Bridgewatch, "Bridgewatch" },
+      {Location.MerlynsRest, "Merlyns Rest" },
       {Location.SteppeCross, "Steppe Cross" },
+      {Location.Bridgewatch, "Bridgewatch" },
       {Location.HighlandCross, "Highland Cross" },
       {Location.BlackMarket, "Black Market" },
-      {Location.Martlock, "Martlock" },
       {Location.Caerleon, "Caerleon" },
+      {Location.Martlock, "Martlock" },
       {Location.Caerleon2, "Caerleon 2" },
       {Location.FortSterling, "Fort Sterling" },
-      {Location.MountainCross, "Mountain Cross" }
+      {Location.MountainCross, "Mountain Cross" },
+      {Location.ArthursRest, "Arthurs Rest" }
     };
 
     public static string GetName(Location location)
@@ -50,8 +53,8 @@ namespace AlbionData.Models
     HighlandCross = 3002,
     BlackMarket = 3003,
     Caerleon = 3005,
-    Caerleon2 = 3013,
     Martlock = 3008,
+    Caerleon2 = 3013,
     FortSterling = 4002,
     MountainCross = 4006,
     ArthursRest = 4300
