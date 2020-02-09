@@ -5,7 +5,7 @@
     <RootNamespace>AlbionData.Models</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>AlbionData.Models</PackageId>
-    <Version>0.1.5</Version>
+    <Version>0.1.7</Version>
     <Authors>albion-online-data</Authors>
     <Company>albion-online-data</Company>
     <Product>albion-online-data</Product>
@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://www.albion-online-data.com/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/broderickhyman/albiondata-models-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Add alternative market history response objects</PackageReleaseNotes>
+    <PackageReleaseNotes>Update Gold models</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
@@ -7,13 +8,8 @@ namespace AlbionData.Models
 {
   public class GoldPrice
   {
-    [Column("created_at")]
-    public DateTime CreatedAt { get; set; }
-
-    [Column("deleted_at")]
-    public DateTime? DeletedAt { get; set; }
-
     [Column("id")]
+    [JsonIgnore]
     public ulong Id { get; set; }
 
     [Column("price")]
@@ -21,9 +17,6 @@ namespace AlbionData.Models
 
     [Column("timestamp")]
     public DateTime Timestamp { get; set; }
-
-    [Column("updated_at")]
-    public DateTime UpdatedAt { get; set; }
   }
 
   public class GoldPriceUpload

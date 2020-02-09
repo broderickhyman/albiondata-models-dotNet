@@ -57,7 +57,7 @@ namespace AlbionData.Models
       {
         entity.ToTable("gold_prices");
         entity.HasKey(e => e.Id);
-        entity.HasIndex(e => new { e.Timestamp, e.DeletedAt });
+        entity.HasIndex(e => e.Timestamp);
       });
     }
   }
