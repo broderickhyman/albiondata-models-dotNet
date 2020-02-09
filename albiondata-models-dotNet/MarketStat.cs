@@ -18,8 +18,7 @@ namespace AlbionData.Models
     public string ItemId { get; set; }
 
     [Column("location")]
-    [MaxLength(128)]
-    public ushort LocationId { get; set; }
+    public ushort Location { get; set; }
 
     [Column("price_avg")]
     public decimal PriceAverage { get; set; }
@@ -31,13 +30,13 @@ namespace AlbionData.Models
     public ulong PriceMin { get; set; }
 
     [Column("timestamp")]
-    public DateTime TimeStamp { get; set; }
+    public DateTime Timestamp { get; set; }
   }
 
   public class MarketStatResponse
   {
     [JsonProperty(PropertyName = "timestamps")]
-    public List<ulong> TimeStamps { get; set; }
+    public List<ulong> Timestamps { get; set; }
 
     [JsonProperty(PropertyName = "prices_min")]
     public List<ulong> PricesMin { get; set; }
@@ -47,12 +46,21 @@ namespace AlbionData.Models
 
     [JsonProperty(PropertyName = "prices_avg")]
     public List<decimal> PricesAvg { get; set; }
+
+    [JsonProperty(PropertyName = "item_count")]
+    public List<ulong> ItemCount { get; set; }
   }
 
   public class MarketStatChartResponse
   {
     [JsonProperty(PropertyName = "location")]
     public string Location { get; set; }
+
+    [JsonProperty(PropertyName = "item_id")]
+    public string ItemTypeId { get; set; }
+
+    [JsonProperty(PropertyName = "quality")]
+    public byte QualityLevel { get; set; }
 
     [JsonProperty(PropertyName = "data")]
     public MarketStatResponse Data { get; set; }

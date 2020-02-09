@@ -10,6 +10,7 @@ namespace AlbionData.Models
     public DbSet<GoldPrice> GoldPrices { get; set; }
     public DbSet<MarketOrderDB> MarketOrders { get; set; }
     public DbSet<MarketStat> MarketStats { get; set; }
+    public DbSet<MarketHistoryDB> MarketHistories { get; set; }
     public string DatabaseConnectionUrl { get; set; }
 
     public MainContext() { }
@@ -35,47 +36,28 @@ namespace AlbionData.Models
               .HasName("Deleted");
         entity.HasIndex(e => new { e.DeletedAt, e.Expires, e.UpdatedAt })
               .HasName("Expired");
-
-        entity.Property(e => e.AlbionId)
-              .IsRequired();
-        entity.Property(e => e.Amount)
-              .HasColumnName("amount");
-        entity.Property(e => e.AuctionType)
-              .HasColumnName("auction_type")
-              .HasMaxLength(32);
-        entity.Property(e => e.EnchantmentLevel)
-              .HasColumnName("enchantment_level");
-        entity.Property(e => e.Expires)
-              .HasColumnName("expires");
-        entity.Property(e => e.Id)
-              .HasColumnName("id");
-        //entity.Property(e => e.ItemGroupTypeId)
-        //      .HasColumnName("group_id")
-        //      .HasMaxLength(128);
-        entity.Property(e => e.ItemTypeId)
-              .HasColumnName("item_id")
-              .HasMaxLength(128);
-        entity.Property(e => e.LocationId)
-              .HasColumnName("location")
-              .IsRequired();
-        entity.Property(e => e.QualityLevel)
-              .HasColumnName("quality_level");
-        entity.Property(e => e.UnitPriceSilver)
-              .HasColumnName("price");
       });
 
       modelBuilder.Entity<MarketStat>(entity =>
       {
         entity.ToTable("market_stats");
         entity.HasKey(e => e.Id);
-        entity.HasAlternateKey(e => new { e.ItemId, e.LocationId, e.TimeStamp });
+        entity.HasAlternateKey(e => new { e.ItemId, e.Location, e.Timestamp });
+      });
+
+      modelBuilder.Entity<MarketHistoryDB>(entity =>
+      {
+        entity.ToTable("market_history");
+        entity.HasKey(e => e.Id);
+        entity.HasAlternateKey(e => new { e.ItemTypeId, e.QualityLevel, e.Location, e.Timestamp })
+              .HasName("Main");
       });
 
       modelBuilder.Entity<GoldPrice>(entity =>
       {
         entity.ToTable("gold_prices");
         entity.HasKey(e => e.Id);
-        entity.HasIndex(e => new { e.TimeStamp, e.DeletedAt });
+        entity.HasIndex(e => new { e.Timestamp, e.DeletedAt });
       });
     }
   }

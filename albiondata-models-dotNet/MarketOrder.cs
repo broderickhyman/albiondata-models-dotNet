@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 using System.Text;
@@ -9,23 +10,40 @@ namespace AlbionData.Models
 {
   public class MarketOrder
   {
+    [Column("id")]
     public ulong Id { get; set; }
+
+    [Column("item_id")]
+    [MaxLength(128)]
     public string ItemTypeId { get; set; }
+
+    [Column("location")]
+    [Required]
     public ushort LocationId { get; set; }
+
+    [Column("quality_level")]
     public byte QualityLevel { get; set; }
+
+    [Column("enchantment_level")]
     public byte EnchantmentLevel { get; set; }
+
+    [Column("price")]
     public ulong UnitPriceSilver { get; set; }
+
+    [Column("amount")]
     public uint Amount { get; set; }
+
+    [Column("auction_type")]
+    [MaxLength(32)]
     public string AuctionType { get; set; }
+
+    [Column("expires")]
     public DateTime Expires { get; set; }
 
     [NotMapped]
+    //[Column("group_id")]
+    [MaxLength(128)]
     public string ItemGroupTypeId { get; set; }
-
-    public string GetUniqueKey()
-    {
-      return $"{Id}|{Amount}|{UnitPriceSilver}";
-    }
   }
 
   public class MarketUpload
@@ -72,6 +90,7 @@ namespace AlbionData.Models
   public class MarketOrderDB : MarketOrder
   {
     [Column("albion_id")]
+    [Required]
     public ulong AlbionId { get; set; }
 
     [Column("initial_amount")]

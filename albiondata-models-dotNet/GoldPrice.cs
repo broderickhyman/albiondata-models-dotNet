@@ -20,7 +20,7 @@ namespace AlbionData.Models
     public uint Price { get; set; }
 
     [Column("timestamp")]
-    public DateTime TimeStamp { get; set; }
+    public DateTime Timestamp { get; set; }
 
     [Column("updated_at")]
     public DateTime UpdatedAt { get; set; }
@@ -29,6 +29,6 @@ namespace AlbionData.Models
   public class GoldPriceUpload
   {
     public uint[] Prices;
-    public long[] TimeStamps;
+    public long[] Timestamps;
   }
 }
