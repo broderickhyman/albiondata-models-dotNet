@@ -55,6 +55,33 @@ namespace AlbionData.Models
     public List<MarketHistory> MarketHistories = new List<MarketHistory>();
   }
 
+  public class MarketHistoriesResponse
+  {
+    [JsonProperty(PropertyName = "location")]
+    public string Location { get; set; }
+
+    [JsonProperty(PropertyName = "item_id")]
+    public string ItemTypeId { get; set; }
+
+    [JsonProperty(PropertyName = "quality")]
+    public byte QualityLevel { get; set; }
+
+    [JsonProperty(PropertyName = "data")]
+    public List<MarketHistoryResponse> Data { get; set; } = new List<MarketHistoryResponse>();
+  }
+
+  public class MarketHistoryResponse
+  {
+    [JsonProperty(PropertyName = "item_count")]
+    public ulong ItemCount { get; set; }
+
+    [JsonProperty(PropertyName = "avg_price")]
+    public ulong AveragePrice { get; set; }
+
+    [JsonProperty(PropertyName = "timestamp")]
+    public DateTime Timestamp { get; set; }
+  }
+
   public enum Timescale
   {
     Day,

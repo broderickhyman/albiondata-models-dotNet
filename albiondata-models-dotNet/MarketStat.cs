@@ -65,4 +65,22 @@ namespace AlbionData.Models
     [JsonProperty(PropertyName = "data")]
     public MarketStatResponse Data { get; set; }
   }
+
+  public class MarketStatResponsev2
+  {
+    [JsonProperty(PropertyName = "timestamps")]
+    public List<DateTime> Timestamps { get; set; }
+
+    [JsonProperty(PropertyName = "prices_avg")]
+    public List<decimal> PricesAverage { get; set; }
+
+    [JsonProperty(PropertyName = "item_count")]
+    public List<ulong> ItemCount { get; set; }
+  }
+
+  public class MarketStatChartResponsev2 : MarketStatChartResponse
+  {
+    [JsonProperty(PropertyName = "data")]
+    public new MarketStatResponsev2 Data { get; set; }
+  }
 }
