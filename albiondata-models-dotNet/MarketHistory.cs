@@ -43,6 +43,10 @@ namespace AlbionData.Models
     [Column("timestamp")]
     [Required]
     public new DateTime Timestamp { get; set; }
+
+    [Column("aggregation")]
+    [Required]
+    public TimeAggregation AggregationType { get; set; }
   }
 
   public class MarketHistoriesUpload
@@ -87,5 +91,11 @@ namespace AlbionData.Models
     Day,
     Week,
     Month
+  }
+
+  public enum TimeAggregation
+  {
+    Hourly = 1,
+    QuarterDay = 6
   }
 }

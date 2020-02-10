@@ -49,7 +49,7 @@ namespace AlbionData.Models
       {
         entity.ToTable("market_history");
         entity.HasKey(e => e.Id);
-        entity.HasAlternateKey(e => new { e.ItemTypeId, e.QualityLevel, e.Location, e.Timestamp })
+        entity.HasAlternateKey(e => new { e.ItemTypeId, e.QualityLevel, e.Location, e.Timestamp, e.AggregationType })
               .HasName("Main");
       });
 
