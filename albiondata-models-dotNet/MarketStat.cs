@@ -51,7 +51,7 @@ namespace AlbionData.Models
     public List<ulong> ItemCount { get; set; }
   }
 
-  public class MarketStatChartResponse
+  public class MarketStatChartResponseBase
   {
     [JsonProperty(PropertyName = "location")]
     public string Location { get; set; }
@@ -61,7 +61,10 @@ namespace AlbionData.Models
 
     [JsonProperty(PropertyName = "quality")]
     public byte QualityLevel { get; set; }
+  }
 
+  public class MarketStatChartResponse : MarketStatChartResponseBase
+  {
     [JsonProperty(PropertyName = "data")]
     public MarketStatResponse Data { get; set; }
   }
@@ -78,9 +81,9 @@ namespace AlbionData.Models
     public List<ulong> ItemCount { get; set; }
   }
 
-  public class MarketStatChartResponsev2 : MarketStatChartResponse
+  public class MarketStatChartResponsev2 : MarketStatChartResponseBase
   {
     [JsonProperty(PropertyName = "data")]
-    public new MarketStatResponsev2 Data { get; set; }
+    public MarketStatResponsev2 Data { get; set; }
   }
 }
