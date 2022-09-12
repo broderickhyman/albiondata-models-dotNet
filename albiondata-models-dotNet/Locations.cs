@@ -43,6 +43,11 @@ namespace AlbionData.Models
     {
       return GetName((Location)locationId) ?? locationId.ToString();
     }
+    
+    public static List<string> GetNames()
+    {
+        return names.Values.ToList();
+    }
   }
 
   public enum Location
